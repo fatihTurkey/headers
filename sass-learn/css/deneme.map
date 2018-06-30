@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/deneme.css",
+	"sources": [
+		"../scss/deneme.scss"
+	],
+	"sourcesContent": [
+		"\r\n\r\n%equal-heights {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n  }\r\n  \r\n  // This CSS will print because %message-shared is extended.\r\n  %message-shared {\r\n    border: 1px solid #ccc;\r\n    padding: 10px;\r\n    color: #333;\r\n  }\r\n  \r\n  .message {\r\n    @extend %message-shared;\r\n  }\r\n  \r\n  .success {\r\n    @extend %message-shared;\r\n    border-color: green;\r\n  }\r\n  \r\n  .error {\r\n    @extend %message-shared;\r\n    border-color: red;\r\n  }\r\n  \r\n  .warning {\r\n    @extend %message-shared;\r\n    border-color: yellow;\r\n  }"
+	],
+	"mappings": ";AAcE,AANA,QAMQ,EAIR,AAVA,QAUQ,EAKR,AAfA,MAeM,EAKN,AApBA,QAoBQ,CApBQ;EACd,MAAM,EAAE,cAAe;EACvB,OAAO,EAAE,IAAK;EACd,KAAK,EAAE,IAAK,GACb;;;AAMD,AAAA,QAAQ,CAAC;EAEP,YAAY,EAAE,KAAM,GACrB;;;AAED,AAAA,MAAM,CAAC;EAEL,YAAY,EAAE,GAAI,GACnB;;;AAED,AAAA,QAAQ,CAAC;EAEP,YAAY,EAAE,MAAO,GACtB",
+	"names": []
+}

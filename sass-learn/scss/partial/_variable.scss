@@ -1,0 +1,229 @@
+@import "mixin";
+
+$primary-color:#2155cd;
+$secondary-color:#06b850;
+$default-link-color:#121212;
+
+$base-font-size:62.5%;
+
+
+$base-nav-height: 60px;
+
+$light-nav-height: $base-nav-height * 0.8;
+$regular-nav-height: $base-nav-height * 1;
+$semi-bold-nav-height: $base-nav-height * 1.25;
+$bold-nav-height: $base-nav-height * 1.5;
+$extra-bold-nav-height: $base-nav-height * 2;
+
+
+%bg-white{
+    background-color: #fff;
+}
+%bg-dark{
+    background-color: #2f3035;
+}
+%bg-primary{
+    background-color: $primary-color;
+}
+%bg-secondary{
+    background-color: $secondary-color;
+}
+
+%bg-linear-lt{ 
+    @include linearGradient2($primary-color, $secondary-color);
+}
+%bg-linear-tb{ 
+    @include linearGradient($primary-color, $secondary-color);
+}
+
+%bg-transparent{  background-color: transparent;
+}
+
+%bg-transparent-dark{
+   @include linearGradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    
+}
+
+%bg-transparent-light{
+    @include linearGradient(rgb(255, 255, 255), rgba(255, 255, 255, 0)); 
+     
+ }
+
+ 
+%bg-primary-d1{
+    background-color: darken($primary-color, 5%);
+}
+%bg-primary-d2{
+   background-color: darken($primary-color, 10%);
+}
+%bg-primary-d3{
+   background-color: darken($primary-color, 15%);
+}
+%bg-primary-d4{
+   background-color: darken($primary-color, 20%);
+}
+%bg-primary-d5{
+   background-color: darken($primary-color, 25%);
+}
+
+
+// primary Color Lighten 
+
+%bg-primary-l1{
+   background-color: lighten($primary-color, 5%);
+}
+%bg-primary-l2{
+  background-color: darken($primary-color, 10%);
+}
+%bg-primary-l3{
+  background-color: darken($primary-color, 15%);
+}
+%bg-primary-l4{
+  background-color: darken($primary-color, 20%);
+}
+%bg-primary-l5{
+  background-color: darken($primary-color, 25%);
+}
+
+
+
+ // Secondary Color Darken 
+
+ %bg-secondary-d1{
+     background-color: darken($secondary-color, 5%);
+ }
+ %bg-secondary-d2{
+    background-color: darken($secondary-color, 10%);
+}
+%bg-secondary-d3{
+    background-color: darken($secondary-color, 15%);
+}
+
+%bg-secondary-d4{
+    background-color: darken($secondary-color, 20%);
+}
+%bg-secondary-d5{
+    background-color: darken($secondary-color, 25%);
+}
+
+
+ // Secondary Color Lighten 
+
+%bg-secondary-l1{
+    background-color: lighten($secondary-color, 5%);
+}
+%bg-secondary-l2{
+   background-color: darken($secondary-color, 10%);
+}
+%bg-secondary-l3{
+   background-color: darken($secondary-color, 15%);
+}
+%bg-secondary-l4{
+   background-color: darken($secondary-color, 20%);
+}
+%bg-secondary-l5{
+   background-color: darken($secondary-color, 25%);
+}
+
+
+
+
+ //* Primary Color Darken Variations 
+ $bg-primary-d1:darken($primary-color, 5%);
+ $bg-primary-d2:darken($primary-color, 10%);
+ $bg-primary-d3:darken($primary-color, 15%);
+ $bg-primary-d4:darken($primary-color, 20%);
+ $bg-primary-d5:darken($primary-color, 25%);
+
+  //* Primary Color  Lighten Variations 
+
+ $bg-primary-l1:lighten($primary-color, 5%);
+ $bg-primary-l2:lighten($primary-color, 10%);
+ $bg-primary-l3:lighten($primary-color, 15%);
+ $bg-primary-l4:lighten($primary-color, 20%);
+ $bg-primary-l5:lighten($primary-color, 25%);
+
+
+ 
+ //* Secondary Color Darken Variations 
+
+
+ $bg-secondary-d1:darken($secondary-color, 5%);
+ $bg-secondary-d2:darken($secondary-color, 10%);
+ $bg-secondary-d3:darken($secondary-color, 15%);
+ $bg-secondary-d4:darken($secondary-color, 20%);
+ $bg-secondary-d5:darken($secondary-color, 25%);
+
+   //* Secondary Color  Lighten Variations 
+
+ $bg-secondary-l1:lighten($secondary-color, 5%);
+ $bg-secondary-l2:lighten($secondary-color, 10%);
+ $bg-secondary-l3:lighten($secondary-color, 15%);
+ $bg-secondary-l4:lighten($secondary-color, 20%);
+ $bg-secondary-l5:lighten($secondary-color, 25%);
+
+  // Primary Color Darken 
+
+ //* Primary Color tint Variations 
+ $bg-primary-t1:tint($primary-color, 5%);
+ $bg-primary-t2:tint($primary-color, 10%);
+ $bg-primary-t3:tint($primary-color, 15%);
+ $bg-primary-t4:tint($primary-color, 20%);
+ $bg-primary-t5:tint($primary-color, 25%);
+
+  //* Primary Color  shade Variations 
+
+ $bg-primary-s1:shade($primary-color, 5%);
+ $bg-primary-s2:shade($primary-color, 10%);
+ $bg-primary-s3:shade($primary-color, 15%);
+ $bg-primary-s4:shade($primary-color, 20%);
+ $bg-primary-s5:shade($primary-color, 25%);
+
+
+ //* Secondary Color Tint Variations 
+
+
+ $bg-secondary-t1:tint($secondary-color, 5%);
+ $bg-secondary-t2:tint($secondary-color, 10%);
+ $bg-secondary-t3:tint($secondary-color, 15%);
+ $bg-secondary-t4:tint($secondary-color, 20%);
+ $bg-secondary-t5:tint($secondary-color, 25%);
+
+   //* Secondary Color  shade Variations 
+
+ $bg-secondary-s1:shade($secondary-color, 5%);
+ $bg-secondary-s2:shade($secondary-color, 10%);
+ $bg-secondary-s3:shade($secondary-color, 15%);
+ $bg-secondary-s4:shade($secondary-color, 20%);
+ $bg-secondary-s5:shade($secondary-color, 25%);
+
+
+ // Media Break Points Larger Screen
+$hd-break-point:"screen and(min-width: 1600px)";
+
+// Media Break Points Larger Screen
+$larger-break-point:"screen and(min-width: 1200px)";
+
+// Media Break Points Larger Screen
+$bigger-notebook-break-point:"screen and(min-width: 991px)";
+
+
+// Media Break Points Larger Screen
+
+$bigger-tablet-break-point:"screen and(min-width: 768px)";
+
+// Media Break Points Laptop
+$laptop-break-point:"screen and(max-width: 1200px)";
+
+// Media Break Points Midi Laptops
+$notebook-break-point:"screen and(max-width: 991px)";
+
+// Media Break Points Tablet
+$tablet-break-point:"screen and(max-width: 768px)";
+
+// Media Break Points Mobil
+$mobil-break-point:"screen and(max-width: 480px)";
+
+
+
+ 

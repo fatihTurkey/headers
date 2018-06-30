@@ -1,0 +1,173 @@
+
+@import "partial/variable", "partial/reset", "partial/mixin";
+
+header{
+  margin-bottom: 20px;
+}
+
+html, body{
+  font-size: $base-font-size * 1.6;
+}
+
+body{
+  background-color:#c4a6a6; 
+  color: $default-link-color;
+  font-family: "Work Sans", sans-serif;
+}
+
+header{
+  min-height: $light-nav-height;
+  
+  .logo{
+    height: $light-nav-height;
+    line-height: $light-nav-height;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: $base-font-size * 2.5;
+    letter-spacing: -1px;
+  }
+
+  .header-menu{
+    display:block;
+    float: right;
+    white-space: nowrap;
+    
+    li{
+      display: inline; float: left;
+  
+      a{
+        display: inline-block;
+        padding: 0 1.5em;
+        font-size: $base-font-size * 1.5;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: $light-nav-height;
+
+        @include transition(0.3s);
+      }
+    }
+  }
+
+
+}
+
+.bg-white{
+  @extend %bg-white;
+}
+
+
+.bg-dark{
+  @extend %bg-dark;
+}
+
+header.bg-white .header-menu li a{
+
+  .logo{
+    color: $primary-color;
+  }
+
+  color: $default-link-color; 
+  border-left: 1px solid rgba(#000, 0.09);
+
+  &:hover{
+    background-color: $primary-color;
+    color: link-color($primary-color);
+  }
+
+}
+
+$bg-dark:#222;
+$bg-white:#fff;
+
+
+
+
+
+
+
+header.bg-dark {
+
+  .logo{
+    color: link-color($bg-dark);
+  }
+
+  .header-menu li a{
+
+  
+
+    color: link-color($bg-dark);
+    border-left: 1px solid rgba(#fff, 0.09);
+  
+    &:hover{
+      background-color: $bg-white;
+      color: link-color($bg-white);
+     
+    }
+  
+  }
+
+
+}
+
+
+
+header.primary-bg {
+
+  background-color: $primary-color;
+
+  .logo{
+    color: link-color($primary-color);
+  }
+
+  .header-menu li a{
+
+  
+
+    color: link-color($primary-color);
+    border-left: 1px solid rgba(#fff, 0.09);
+  
+    &:hover{
+      background-color: $bg-primary-d1;
+      color: link-color($bg-primary-d1);
+     
+    }
+  
+  }
+
+
+}
+
+
+
+
+
+header.secondary-bg {
+
+  background-color: $secondary-color;
+
+  .logo{
+    color: link-color($secondary-color);
+  }
+
+  .header-menu li a{
+
+  
+
+    color: link-color($secondary-color);
+    border-left: 1px solid rgba(#fff, 0.09);
+  
+    &:hover{
+      background-color: $bg-secondary-d1;
+      color: link-color($bg-secondary-d1);
+     
+    }
+  
+  }
+
+
+}
+
+
+

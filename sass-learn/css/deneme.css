@@ -1,0 +1,105 @@
+.bg-white {
+  background-color: #fff; }
+
+.bg-dark {
+  background-color: #2f3035; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+  *::after, *::before {
+    box-sizing: border-box; }
+
+html, body {
+  box-sizing: border-box; }
+
+header ul, header ol, footer ul, footer ol {
+  list-style: none; }
+
+ul, ol {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0; }
+
+header {
+  margin-bottom: 20px; }
+
+html, body {
+  font-size: 100%; }
+
+body {
+  background-color: #c4a6a6;
+  color: #121212;
+  font-family: "Work Sans", sans-serif; }
+
+header {
+  min-height: 48px; }
+  header .logo {
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 156.25%;
+    letter-spacing: -1px; }
+  header .header-menu {
+    display: block;
+    float: right;
+    white-space: nowrap; }
+    header .header-menu li {
+      display: inline;
+      float: left; }
+      header .header-menu li a {
+        display: inline-block;
+        padding: 0 1.5em;
+        font-size: 93.75%;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 48px;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
+
+header.bg-white .header-menu li a {
+  color: #121212;
+  border-left: 1px solid rgba(0, 0, 0, 0.09); }
+  header.bg-white .header-menu li a .logo {
+    color: #2155cd; }
+  header.bg-white .header-menu li a:hover {
+    background-color: #2155cd;
+    color: #fff; }
+
+header.bg-dark .logo {
+  color: #fff; }
+
+header.bg-dark .header-menu li a {
+  color: #fff;
+  border-left: 1px solid rgba(255, 255, 255, 0.09); }
+  header.bg-dark .header-menu li a:hover {
+    background-color: #fff;
+    color: #000; }
+
+header.primary-bg {
+  background-color: #2155cd; }
+  header.primary-bg .logo {
+    color: #fff; }
+  header.primary-bg .header-menu li a {
+    color: #fff;
+    border-left: 1px solid rgba(255, 255, 255, 0.09); }
+    header.primary-bg .header-menu li a:hover {
+      background-color: #1d4cb7;
+      color: #fff; }
+
+header.secondary-bg {
+  background-color: #06b850; }
+  header.secondary-bg .logo {
+    color: #fff; }
+  header.secondary-bg .header-menu li a {
+    color: #fff;
+    border-left: 1px solid rgba(255, 255, 255, 0.09); }
+    header.secondary-bg .header-menu li a:hover {
+      background-color: #059f45;
+      color: #fff; }
